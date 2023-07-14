@@ -346,266 +346,269 @@ void filterPosition() {
   Serial.println(comparePos_y);
   Serial.println(comparePos_z);
 
-  switch(c_loop){
-    case 1:
-      pos_x[c_loop-1] = current_tag_position[0];
-      pos_y[c_loop-1] = current_tag_position[1];
-      pos_z[c_loop-1] = current_tag_position[2];
-      Serial.print("pos add loop : ");
-      Serial.println(c_loop);
-      break;
-    case 2:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+  if(c_error <= 4){
+    switch(c_loop){
+      case 1:
         pos_x[c_loop-1] = current_tag_position[0];
         pos_y[c_loop-1] = current_tag_position[1];
         pos_z[c_loop-1] = current_tag_position[2];
         Serial.print("pos add loop : ");
         Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 3:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 4:
-     if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 5:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 6:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 7:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 8:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 9:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 10:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 11:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 12:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 13:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      break;
-    case 14:
-      if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
-        pos_x[c_loop-1] = current_tag_position[0];
-        pos_y[c_loop-1] = current_tag_position[1];
-        pos_z[c_loop-1] = current_tag_position[2];
-        Serial.print("pos add loop : ");
-        Serial.println(c_loop);
-      }
-      else{
-        pos_x[c_loop-1] = 0.0;
-        pos_y[c_loop-1] = 0.0;
-        pos_z[c_loop-1] = 0.0;
-        c_error++;
-        Serial.println("******** Incorrect conditionnal ********");
-      }
-      c_loop = 0;
-      Serial.print("X : ");
-      for(int i = 1; i <= 14; i++){
-        Serial.println(pos_x[i-1]);
-      }
-      Serial.print("Y : ");
-      for(int i = 1; i <= 14; i++){
-        Serial.println(pos_y[i-1]);
-      }
-      Serial.print("Z : ");
-      for(int i = 1; i <= 14; i++){
-        Serial.println(pos_z[i-1]);
-      }
-      Serial.println(c_error);
-      break;
-    default:
-      Serial.println("******** Invaid Data **********");
-  }
-  if(c_error <= 4 && c_loop == 14){
-    float AVGPos_x = 0.0;
-    float AVGPos_y = 0.0;
-    float AVGPos_z = 0.0;
-
-    for(int i = 0; i < 14; i++){
-      AVGPos_x += pos_x[i];
-      AVGPos_y += pos_y[i];
-      AVGPos_z += pos_z[i];
+        break;
+      case 2:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 3:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 4:
+       if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 5:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 6:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 7:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 8:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 9:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 10:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 11:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 12:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 13:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        break;
+      case 14:
+        if(comparePos_x == 0 && comparePos_y == 0 && comparePos_z == 0){
+          pos_x[c_loop-1] = current_tag_position[0];
+          pos_y[c_loop-1] = current_tag_position[1];
+          pos_z[c_loop-1] = current_tag_position[2];
+          Serial.print("pos add loop : ");
+          Serial.println(c_loop);
+        }
+        else{
+          pos_x[c_loop-1] = 0.0;
+          pos_y[c_loop-1] = 0.0;
+          pos_z[c_loop-1] = 0.0;
+          c_error++;
+          Serial.println("******** Incorrect conditionnal ********");
+        }
+        Serial.print("X : ");
+        for(int i = 1; i <= 14; i++){
+          Serial.println(pos_x[i-1]);
+        }
+        Serial.print("Y : ");
+        for(int i = 1; i <= 14; i++){
+          Serial.println(pos_y[i-1]);
+        }
+        Serial.print("Z : ");
+        for(int i = 1; i <= 14; i++){
+          Serial.println(pos_z[i-1]);
+        }
+        Serial.println(c_error);
+        break;
+      default:
+        Serial.println("******** Invaid Data **********");
     }
-    AVGPos_x /= (c_loop - c_error);
-    AVGPos_y /= (c_loop - c_error);
-    AVGPos_z /= (c_loop - c_error);
-
-    c_error = 0;
-    c_loop = 0;
-
-    Serial.print("Average of X : ");
-    Serial.println(AVGPos_x);
-    Serial.print("Average of Y : ");
-    Serial.println(AVGPos_y);
-    Serial.print("Average of Z : ");
-    Serial.println(AVGPos_z);
+    if(c_loop == 14){
+      float AVGPos_x = 0.0;
+      float AVGPos_y = 0.0;
+      float AVGPos_z = 0.0;
+  
+      for(int i = 0; i < 14; i++){
+        AVGPos_x += pos_x[i];
+        AVGPos_y += pos_y[i];
+        AVGPos_z += pos_z[i];
+      }
+      AVGPos_x /= (c_loop - c_error);
+      AVGPos_y /= (c_loop - c_error);
+      AVGPos_z /= (c_loop - c_error);
+  
+      c_error = 0;
+      c_loop = 0;
+  
+      Serial.print("Average of X : ");
+      Serial.println(AVGPos_x);
+      Serial.print("Average of Y : ");
+      Serial.println(AVGPos_y);
+      Serial.print("Average of Z : ");
+      Serial.println(AVGPos_z);
+    }
   }
   else{
     c_error = 0;
     c_loop = 0;
-    Serial.println("############ Data Incorrect ############");
+    Serial.println("########### Position Error #############");
   }
 }
+
+void compareError();
